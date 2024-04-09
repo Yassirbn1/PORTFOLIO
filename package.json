@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "debug": "^4.3.4",
+    "vite": "^5.1.5"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.1"
+  }
+}

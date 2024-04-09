@@ -1,0 +1,302 @@
+:root{
+    --premier-color:#fff;
+    --deuxieme-colortext: #1f242d;
+    --main-color:rgb(255, 153, 0);
+} 
+.dark-theme{
+    --premier-color: #1f242d;
+    --second--bg-color:#323946;
+    --deuxieme-colortext:#fff;
+    --main-color:rgb(255, 153, 0);
+  
+}
+
+.htmll {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background:var(--premier-color) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.headere {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#icon {
+    width: 30px; 
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.spn {
+    color: var(--main-color);
+}
+
+.bdy {
+    position: relative;
+    background: var( --premier-color);
+    color: var(--deuxieme-colortext);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.about-contente {
+    flex: 1;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    text-align: left;
+    font-size: 4rem;
+}
+
+.about-contente h2 {
+    text-align: left;
+    line-height: 1;
+}
+
+.about-contente h3 {
+    font-size: 3rem;
+    padding-top: 1%;
+}
+
+.about-contente p {
+    font-size: 1.8rem;
+    margin: 1rem 0 0;
+    padding-top: 1%;
+}
+
+@media (max-width: 900px) {
+    .about-contente p {
+        font-size: 1.25rem;
+        writing-mode: horizontal-tb;
+        white-space: normal; /* Allow the text to wrap naturally */
+    }
+
+    .myicons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        margin-right: 20px;
+        margin-top: 120px; /* Ajoutez une marge en haut pour l'espace entre le paragraphe et les icônes */
+    }
+
+}
+.gmail-icon,
+.github-icon,
+.linkden-icon {
+    text-align: center;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 0;
+}
+
+.gmail-icon a,
+.github-icon a,
+.linkden-icon a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
+    margin-right: 5px; 
+    margin-top: 0;
+}
+
+.gmail-icon a:hover,
+.github-icon a:hover,
+.linkden-icon a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.gmail-icon a i,
+.github-icon a i,
+.linkden-icon a i {
+    font-size: 2.4rem;
+    color: var(--second--bg-color);
+    color: #0b0b0b;
+}
+.containerr {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    display: flex;
+    align-items: center;
+}
+
+.containerr .text {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.myicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    margin-right: 20px;
+    padding-top: 13%;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.icon-container1,
+.icon-container2,
+.icon-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon-container1 i {
+    font-size: 12rem;
+    color: rgb(192, 118, 8);
+}
+.icon-container2 i {
+    font-size: 12rem;
+    color: #0b55df;
+}
+.icon-container3 i {
+    font-size: 12rem;
+    color: #f9f506;
+}
+.nom-icon1,
+.nom-icon2,
+.nom-icon3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 10rem;
+   
+}
+.about-contente h3{
+    color: rgb(255, 153, 0);
+}
+.icon-container1 p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.icon-container2 p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.icon-container3 p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media (max-width: 100px) {
+    .myicons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        margin-right: 20px;
+        padding-top: 10%;
+    }
+
+    .icon-container p {
+        font-size: 6rem;
+       
+    }
+  
+ 
+}
+#prevBtn,
+#nextBtn {
+    font-size: 1rem; 
+    background-color: #0b0b0b; 
+    color: #fff; 
+    padding: 3px; 
+    margin: 5px 0; 
+    cursor: pointer;
+    border: none; 
+    border-radius: 5px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#buttonsContainer {
+    display: flex;
+    align-items: center;
+}
+
+#prevBtn {
+    margin-right: 10px; /* Ajustez la marge à droite pour séparer le bouton précédent de l'icône */
+}
+
+#nextBtn {
+    margin-left: 10px; /* Ajustez la marge à gauche pour séparer le bouton suivant de l'icône */
+}
+.pageessentiel-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+
+.pageessentiel-icon a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
+}
+
+.pageessentiel-icon a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.pageessentiel-icon a i {
+    font-size: 2.4rem;
+    color: var(--second--bg-color);
+}
+#prevBtn:hover,
+#nextBtn:hover {
+    box-shadow: 0 0 0 0.5px #fff; 
+   
+}
+
+@media only screen and (max-width: 600px) {
+    /* Ajoutez vos règles CSS spécifiques aux écrans de moins de 600px de largeur ici */
+    .about-contente {
+        padding: 0 10px; /* Réduisez l'espacement horizontal pour les petits écrans */
+        font-size: 2rem; /* Réduisez la taille de la police pour les petits écrans */
+    }
+
+    .myicons {
+        margin-top: 60px; /* Réduisez l'espace entre le paragraphe et les icônes pour les petits écrans */
+    }
+
+    .icon-container1 i,
+    .icon-container2 i,
+    .icon-container3 i {
+        font-size: 8rem; /* Réduisez la taille des icônes pour les petits écrans */
+    }
+
+    .icon-container p {
+        font-size: 1rem; /* Réduisez la taille du texte des icônes pour les petits écrans */
+    }
+}
